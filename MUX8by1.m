@@ -1,0 +1,6 @@
+%MUX8by1
+function X = MUX8by1(S0,S1,S2,D0,D1,D2,D3,D4,D5,D6,D7)
+f1=MUX4by1(S0,S1,D0,D1,D2,D3);
+f2=MUX4by1(S0,S1,D4,D5,D6,D7);
+X=MUX2by1(S2,f1,f2);
+end
